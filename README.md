@@ -1,13 +1,19 @@
-# Relational Database Analytics System (SQL & Python)
+# Web Scraping & NoSQL (MongoDB) Sandbox
 
-This project demonstrates the design, implementation, and analytical querying of a relational database system using PostgreSQL and Python.
+This repository demonstrates practical implementations of web scraping pipelines and document-oriented database workflows using Python.
 
-## 🚀 Key Features
-- **Database Modeling:** Designed a relational database schema with optimized table structures and foreign key constraints.
-- **Automated Seeding:** Developed a Python script utilizing `Faker` and database connectors to efficiently populate the database with thousands of mock records.
-- **Advanced Business Intelligence Queries:** Authored complex SQL scripts executing multi-table joins, aggregations (`GROUP BY`, `HAVING`), and analytical sorting to extract meaningful business metrics.
+---
+
+## 📁 Project Components
+
+* **`parsing.py`** — A web scraper built using `requests` and `BeautifulSoup` (with the `lxml` parser). It navigates through the pages of [quotes.toscrape.com](http://quotes.toscrape.com/), extracts quotes, tags, and detailed author biographies, and saves the structured data into `quotes.json` and `authors.json`.
+* **`mongodb.py`** — A database management script that connects to a cloud-hosted **MongoDB Atlas** instance using the `pymongo` driver. It demonstrates core CRUD (Create, Read, Update, Delete) operations, including record insertion, advanced document filtering, updating arrays via `$push`, and bulk deletion.
+
+---
 
 ## 🛠️ Tech Stack
-- **Language:** Python
-- **Database:** PostgreSQL / SQLite
-- **Libraries:** DB API adapters, Faker
+
+- **Language:** Python 3.10+
+- **Web Scraping:** Beautiful Soup 4, Requests, LXML
+- **Database:** MongoDB Atlas, PyMongo
+- **Data Format:** JSON
