@@ -1,6 +1,6 @@
 # Web Scraping & NoSQL (MongoDB) Sandbox
 
-This repository demonstrates practical implementations of web scraping pipelines and document-oriented database workflows using Python.
+This repository serves as an integration sandbox to demonstrate web scraping and NoSQL database management using Python.
 
 ---
 
